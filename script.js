@@ -6,14 +6,7 @@ var year = new Date().getFullYear()+parseInt(years);
 
 function compute()
 {
-    p = document.getElementById("principal").value;
-    r = document.getElementById("rate").value;
-    y = document.getElementById("years").value;
-    i = p * y * r /100;
-    var year = new Date().getFullYear()+parseInt(y);
-    
-    document.getElementById("result").innerHTML="If you deposit <mark>"+p+"</mark>,\<br\>at an interest rate of<mark>"+r+"</mark>%\<br\>You will receive an amount of <mark>"+i+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>"
-    
+   document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>"    
 }
     function updateRate() 
 {
