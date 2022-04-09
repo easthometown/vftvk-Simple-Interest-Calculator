@@ -8,7 +8,7 @@
         <div class = "maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal" min="0"><br/>
+        Amount <input type="number"  id="principal" oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"><br/>
         Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()">
             <span id="rate_val">10.25%</span> <br/>
         No. of Years <select  id="years"> 
