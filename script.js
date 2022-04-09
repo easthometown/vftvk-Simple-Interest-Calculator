@@ -6,13 +6,13 @@ var year = new Date().getFullYear()+parseInt(years);
 
 function compute()
 {
-   
+   document.getElementById("result").innerHTML="If you deposit "
    if(principal<=0){
       alert("Enter a positive number")
-      principal.focus();
+      document.getElementById("principal").focus();
       return false;
    }
-   document.getElementById("result").innerHTML="If you deposit "
+   
        
 }
 
