@@ -1,10 +1,10 @@
 function compute()
 {
     var principal = document.getElementById("principal").value;
-    if(principal==""||principal==0){
+    if(principal<=0){
          alert("Enter a positive number");
         principal.focus();
-        return;
+        return false;
     }
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
