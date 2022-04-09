@@ -8,9 +8,9 @@
         <div class = "maindiv">
         <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal" min="0"><br/>
-        Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate()">
-            <span id="rate_val">10.25%</span> <br/>
+        Amount <input type="number"  id="principal" min="0" oninput="this.value = 
+        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null"> <span id="null" oninput="myfunction(principal)"></span> <br/>
+        Rate <input type="range"  id="rate" min="1" max="20" step="0.25" value="10.25" onchange="updateRate(this.value)"> <span id="rate_val">10.25%</span> <br/>
         No. of Years <select  id="years"> 
                          <option value="1">1</option>
                          <option value="2">2</option>
@@ -23,15 +23,11 @@
                          <option value="9">9</option>
                          <option value="10">10</option>
                      </select><br/>
-       
+        Interest : <span id="result"></span><br/>
 
         <button onclick="compute()">Compute Interest</button><br/>
-         Interest: <span id="result">
-            <script>
-                document.getElementById("result").innerHTML="If you deposit "+principal+",\<br\>at an interest rate of "+rate+"%\<br\>You will receive an amount of "+amount+",\<br\>in the year "+year+"\<br\>";
-            </script>
-            </span><br/>
+        <span id="result"></span>
         </div>
-        <footer>&#169; This Calculator belongs to Togo</footer>
+        <footer>&#169; This Calculator belongs to togo</footer>
     </body>
 </html>
