@@ -10,7 +10,7 @@ function compute()
          document.getElementById("principal").focus();
         return false;
     }
-    document.getElementById("result").innerHTML="If you deposit <mark>"+p+"</mark>,\<br\>at an interest rate of<mark>"+r+"</mark>%\<br\>You will receive an amount of <mark>"+i+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>"
+    document.getElementById("result").innerHTML="If you deposit <mark>"+p+"</mark>,\<br\>at an interest rate of<mark>"+r+"</mark>%\<br\>You will receive an amount of <mark>"+i+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
     
 }
     function updateRate() 
