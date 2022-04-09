@@ -5,7 +5,7 @@ function compute()
     y = document.getElementById("years").value;
     i = p * y * r /100;
     var year = new Date().getFullYear()+parseInt(y);
-    if(p<=0){
+    if(parseInt(p)<=0){
         alert("Enter a positive number");
          document.getElementById("principal").focus();
         return false;
