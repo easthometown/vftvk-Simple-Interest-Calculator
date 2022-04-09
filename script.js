@@ -21,8 +21,4 @@ function updateRate()
 
     
 }
-function myFunction() {
-    let age = document.getElementById("principal").value;
-    let voteable = (age = 0) ? "Enter number":"Thanks";
-    document.getElementById("null").innerHTML = voteable + " to vote.";
-  }
+
