@@ -16,7 +16,7 @@ function compute()
         ",\<br\>at an interest rate of "
         +rate+
         "%\<br\>You will receive an amount of "
-        +amount+",\<br\>in the year "+year+"\<br\>";
+        +interest+",\<br\>in the year "+year+"\<br\>";
     
 }
     function updateRate() 
