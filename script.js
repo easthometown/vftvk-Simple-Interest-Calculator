@@ -7,7 +7,7 @@ var year = new Date().getFullYear()+parseInt(years);
 function compute()
 {
    if(principal<=0){
-      alert( "Enter a positive number")
+      alert("Enter a positive number")
       principal.focus();
       return false;
    }
@@ -18,7 +18,5 @@ function updateRate()
 {
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
-
-    
 }
 
