@@ -9,7 +9,7 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = (rate /100)+1;
-    for(i=0;i<years;i++){
+    for(let i=0;i<years;i++){
         interest = interest*interest;
     }
     var year = new Date().getFullYear()+parseInt(years);
