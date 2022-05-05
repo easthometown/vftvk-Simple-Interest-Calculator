@@ -13,7 +13,7 @@ function compute()
         interest = interest*interest;
     }
     var year = new Date().getFullYear()+parseInt(years);
-    var amount = interest*pprincipal;
+    var amount = interest*principal;
     var t1="<mark>";
     var t2="</mark>";
     
